@@ -95,14 +95,3 @@ const localStorage = AESLocalStorage.init("your-encryption-key");
 ## License
 
 MIT
-
-```
-
-### Key Sections
-- **Installation**: Instructions for installing the package.
-- **Usage**: How to initialize and use the class with examples.
-- **Methods**: Descriptions of the available methods.
-- **Example Usage**: A complete example demonstrating the methods.
-- **Notes**: Important notes about using the library.
-- **License**: Licensing information.
-```
