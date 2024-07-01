@@ -17,7 +17,7 @@ First, initialize the `AESLocalStorage` class with your encryption key.
 ```javascript
 import AESLocalStorage from "aes-local-storage";
 
-const localStorage = AESLocalStorage.init("your-encryption-key");
+const aesLS = AESLocalStorage.init("your-encryption-key");
 ```
 
 ### Methods
@@ -33,7 +33,7 @@ Saves data to `localStorage` with encryption.
 **Example**:
 
 ```javascript
-await localStorage.saveToLocalStorage("user", { username: "john_doe" });
+await aesLS.saveToLocalStorage("user", { username: "john_doe" });
 ```
 
 #### `getFromLocalStorage(name)`
@@ -49,7 +49,7 @@ Retrieves and decrypts data from `localStorage`.
 **Example**:
 
 ```javascript
-const userData = await localStorage.getFromLocalStorage("user");
+const userData = await aesLS.getFromLocalStorage("user");
 console.log(userData); // { username: 'john_doe' }
 ```
 
@@ -63,7 +63,7 @@ Removes data from `localStorage`.
 **Example**:
 
 ```javascript
-localStorage.removeFromLocalStorage("user");
+aesLS.removeFromLocalStorage("user");
 ```
 
 ### Example Usage
@@ -71,18 +71,18 @@ localStorage.removeFromLocalStorage("user");
 ```javascript
 import AESLocalStorage from "aes-local-storage";
 
-const localStorage = AESLocalStorage.init("your-encryption-key");
+const aesLS = AESLocalStorage.init("your-encryption-key");
 
 (async () => {
   // Save data
-  await localStorage.saveToLocalStorage("settings", { theme: "dark" });
+  await aesLS.saveToLocalStorage("settings", { theme: "dark" });
 
   // Retrieve data
-  const settings = await localStorage.getFromLocalStorage("settings");
+  const settings = await aesLS.getFromLocalStorage("settings");
   console.log(settings); // { theme: 'dark' }
 
   // Remove data
-  localStorage.removeFromLocalStorage("settings");
+  aesLS.removeFromLocalStorage("settings");
 })();
 ```
 

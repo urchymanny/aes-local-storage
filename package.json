@@ -1,6 +1,6 @@
 {
   "name": "aes-local-storage",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
@@ -8,7 +8,23 @@
     "build": "babel src -d dist",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "AES encryption",
+    "local storage",
+    "secure storage",
+    "client-side encryption",
+    "data protection",
+    "web security",
+    "JavaScript encryption",
+    "crypto module",
+    "encrypted local storage",
+    "secure client storage",
+    "encrypted data",
+    "web development",
+    "security library",
+    "browser storage",
+    "data encryption"
+  ],
   "author": "Uchenna Mba",
   "description": "To encrypt and decrypt data stored in the local storage using AES",
   "license": "ISC",
